@@ -45,11 +45,29 @@ Secure desktop password manager with encryption, built with Python and CustomTki
 git clone https://github.com/Astapov-source/PasswordManager.git
 cd PasswordManager
 
-# Install dependencies
-pip install customtkinter cryptography
+# Install dependencies (Linux: use pip3)
+pip3 install customtkinter cryptography
 
 # Run the application
-python main.py
+python3 main.py
+```
+
+#### Linux: System dependencies
+
+On Debian/Ubuntu:
+```bash
+sudo apt update
+sudo apt install python3 python3-pip python3-tk
+```
+
+On Fedora:
+```bash
+sudo dnf install python3 python3-pip python3-tkinter
+```
+
+On Arch:
+```bash
+sudo pacman -S python python-pip tk
 ```
 
 ### Build executable yourself
@@ -72,9 +90,11 @@ python build.py
 ### System requirements
 
 - **Windows**: 10 or later (x64)
-- **Linux**: any distro with Python 3.10+ and tkinter
+- **Linux**: any distro with Python 3.10+, tkinter, and pip
 - **RAM**: ~50 MB
 - **Disk**: ~20 MB (app) + minimal (database)
+
+> **Note for Linux**: `tkinter` is not installed by default on many distros. Install it via your package manager before running `pip3 install`.
 
 ## How it works
 
