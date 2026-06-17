@@ -1,0 +1,54 @@
+# Database
+passwords.db
+*.db
+*.db.salt
+*.sqlite
+*.sqlite3
+
+# Encryption keys
+*.key
+*.pem
+secret.key
+key.key
+
+# User data
+data/
+user_data/
+
+# JSON data (except example)
+*.json
+!example_data.json
+
+# Virtual environments
+venv/
+env/
+.venv/
+
+# PyInstaller
+build/
+dist/
+*.spec
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Logs
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Backup
+*_tkinter_backup.py
+
+# Temp
+stderr.txt
